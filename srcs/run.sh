@@ -1,6 +1,6 @@
 if [ "$AUTOINDEX" = off ] ;
-then mv tmp/default /etc/nginx/sites-available/ ;
-else mv home/default /etc/nginx/sites-available/ ;
+then cp tmp/default /etc/nginx/sites-available/ ;
+else cp home/default /etc/nginx/sites-available/ ;
 fi
 
 

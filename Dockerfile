@@ -2,8 +2,8 @@ FROM debian:buster
 
 ENV AUTOINDEX on
 
-COPY ./srcs/* /home
-COPY ./srcs/autoindexoff/default /tmp
+COPY ./srcs/* /home/
+COPY ./srcs/autoindexoff/default /tmp/
 
 RUN apt-get update
 RUN apt-get install -y nginx openssl vim \
